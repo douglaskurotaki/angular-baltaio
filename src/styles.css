@@ -6,10 +6,10 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	text-align: center;
-	background: #3023ae;
-	background: -moz-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
-	background: -webkit-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
-	background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);	
+	background: #5ee7df;
+	background: -moz-linear-gradient(60deg, #5ee7df 0%, #b490ca 100%);
+	background: -webkit-linear-gradient(60deg, #5ee7df 0%, #b490ca 100%);
+	background: linear-gradient(60deg, #5ee7df 0%, #b490ca 100%);	
 }
 
 button{
@@ -31,15 +31,6 @@ li>button{
 	float: right;
 	opacity: 0.6;
 	transition: opacity 1s;	
-}
-
-li>button{
-	border: none;
-	background-color: #fff;
-	font-size: 1em;
-	float: right;
-	opacity: 0.6;
-	transition: opacity 1s;
 }
 
 li>button:hover{
@@ -93,7 +84,7 @@ ul{
 }
 
 input{
-	width: 100%;
+	width: 97%;
 	line-height: 50px;
 	text-indent: 10px;
 	font-size: 1.2em;

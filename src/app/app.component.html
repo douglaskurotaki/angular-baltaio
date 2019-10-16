@@ -1,9 +1,9 @@
-<h1 class="title animated jackInTheBox">{{ title }}</h1>
+<h1 class="title animated slideInUp">{{ title }}</h1>
 <ul class="animated flipInX" *ngIf="mode=='list'"> 
 	<p *ngIf="todos.length==0"><small>Você não tem nenhuma tarefa hoje</small></p>
 	<li *ngFor="let todo of todos"> {{ todo.title }}
 		<button (click)="remove(todo)"><i class="far fa-trash-alt"></i></button>
-		<button *ngIf="!todo.done" (click)="markAsDone(todo)"><i class="far fa-check-circle"></i></button> 
+		<button *ngIf="!todo.done" (click)="markAsDone(todo)"><i class="done far fa-check-circle"></i></button> 
 		<button *ngIf="todo.done" (click)="markAsUndone(todo)"><i class="fas fa-check-circle"></i></button>
 	</li>
 </ul>
@@ -14,10 +14,10 @@
 	<form [formGroup]="form">
 			<label for="">Tarefa: </label>
 			<input 	type="text" 
-							placeholder="Título da Tarefa" 
+							placeholder="Título da Tarefa" 	
 							maxlength="60" 
 							formControlName="title"> 
-			<small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 a 60 caracteres <br></small>
+			<!-- <small class="danger" *ngIf="form.controls.title.invalid && !form.controls.title.pristine">Este campo deve conter entre 3 a 60 caracteres <br></small> -->
 			<p class="text-center">
 				<button [disabled]="form.invalid" (click)="add()" class="button"><i class="far fa-save"></i> Salvar</button>
 		</p>
